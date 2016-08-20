@@ -1,0 +1,34 @@
+/*
+  Author - Sergey Popov.
+  Author URI: http://sergeypopov.name
+  Author social: https://vk.com/sergeytovarov
+  Author email: tovarov.piter@gmail.com
+  From Saint-Petersburg with love!
+*/
+
+/*=== миксины слой ===*/
+
+@import "_mixins/mixin";
+
+
+
+/*=== базовый слой ===*/
+
+@import "base/__variable";
+@import "base/__normalize";
+@import "base/grid";
+@import "base/typography";
+@import "base/buttons";
+@import "base/forms";
+
+
+
+/*=== компоненты ===*/
+@import "components/header";
+@import "components/footer";
+
+
+
+/*=== страницы ===*/
+
+@import "pages/layout";

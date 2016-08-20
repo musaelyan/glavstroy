@@ -1,0 +1,27 @@
+input[type="text"],
+textarea,
+select,
+input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  font-family: $base-font;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+input::-moz-placeholde {
+  opacity: 0.8;
+}
