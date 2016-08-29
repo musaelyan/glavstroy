@@ -1,9 +1,12 @@
 body {
-  min-width: 1024px;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
-.conatiner {
-  width: 1000px;
+.container {
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 40px;
+  @include clearfix;
 }

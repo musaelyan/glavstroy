@@ -1,8 +1,8 @@
 {
-  "name": "grunt-project-template",
+  "name": "glavstroy",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Базовый шаблон, для начала работы над проектом на базе сборщика Grunt.",
+  "description": "Строим условия для комфортной жизни",
   "dependencies": {
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.4",
