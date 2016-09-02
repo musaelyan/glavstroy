@@ -1,7 +1,14 @@
 .features-block {
-  margin-top: 175px;
+  padding-bottom: 115px;
+}
 
-
+.features__title {
+  font-family: $Panton;
+  font-size: 50px;
+  line-height: 50px;
+  color: $orange;
+  transform: translateY(-20px);
+  margin-bottom: 45px;
 }
 
 .features {
@@ -14,5 +21,37 @@
   line-height: 21px;
   display: inline-block;
   vertical-align: top;
-  width: 250px;
+  width: 260px;
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-family: $base-font;
+    font-size: 25px;
+    line-height: 29px;
+    color: $orange;
+    margin: 0;
+    margin: 40px 0;
+    font-weight: normal;
+  }
+
+  &:before {
+    content: "";
+    width: 100px;
+    height: 85px;
+    background: $grey;
+    display: block;
+  }
+
+  &__tip {
+    color: #818181
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }

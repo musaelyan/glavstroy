@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  height: 709px;
+  height: 954px;
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -9,16 +9,6 @@
   padding-top: 45px;
   position: relative;
 
-  &:after {
-    content: "";
-    width: 100%;
-    height: 426px;
-    background: url("../img/promo-after.png") no-repeat center;
-    display: block;
-    position: absolute;
-    bottom: -225px;
-    background-size: cover;
-  }
 
   &__link {
     font-size: 0;
@@ -32,17 +22,14 @@
 
 .promo-content {
   position: relative;
-  width: 702px;
-  height: 245px;
-  margin-left: 400px;
-  margin-bottom: 296px;
+  @include clearfix;
+  margin-bottom: 300px;
+
 
   &__image {
     width: 702px;
     height: 245px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    float: right;
 
     img {
       display: block;
@@ -55,7 +42,8 @@
     font-weight: normal;
     color: white;
     position: absolute;
-    bottom: 0;
-    left: 15px;
+    bottom: 5px;
+    right: 25px;
+    text-shadow: -1px 1px 2px #232323;
   }
 }

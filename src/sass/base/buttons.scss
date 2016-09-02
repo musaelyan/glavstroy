@@ -1,16 +1,36 @@
 .btn {
   display: inline-block;
-  box-sizing: border-box;
   cursor: pointer;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+  font-weight: normal;
+  background: linear-gradient(#feab16,#ff7500) $orange;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: 2px solid $orange;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 3px 1px #D2D2D2;
+
 
   &:hover {
-    opacity: 0.8;
+    background: #ff9451;
   }
 
   &:active {
-    opacity: 1;
+    background: #f5843e;
   }
+}
+
+.btn--call {
+  float: right;
+  max-width: 210px;
+}
+
+.btn--features {
+  min-width: 155px;
 }
