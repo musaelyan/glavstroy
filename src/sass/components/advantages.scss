@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 
   &__title {
     @include titles;
@@ -27,7 +27,7 @@
 .advantage {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   width: 280px;
   margin-right: 160px;
   padding-top: 80px;
