@@ -604,6 +604,17 @@ input::-moz-placeholde {
   opacity: 0.8;
 }
 
+select {
+  padding-right: 15px;
+  padding-left: 15px;
+  background: white url("../img/arrow-select.png") no-repeat right;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 /*=== ╨║╨╛╨╝╨┐╨╛╨╜╨╡╨╜╤В╤Л ===*/
 
 .header {
@@ -965,6 +976,127 @@ input::-moz-placeholde {
   padding-left: 60px;
 }
 
+.advantages-block {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: #1d2734;
+  background-image: url("../img/advantages.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.advantages-block__title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #ff9000;
+  font-family: "Panton", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.advantages-block__description {
+  margin: 0;
+  margin-bottom: 75px;
+  color: #646464;
+  color: #d0d0d0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.advantages {
+  font-size: 0;
+}
+
+.advantage {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  margin-right: 160px;
+  margin-bottom: 60px;
+  padding-top: 80px;
+  vertical-align: top;
+}
+
+.advantage:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.advantage:before {
+  position: absolute;
+  top: 0;
+  display: block;
+  content: "";
+}
+
+.advantage--1:before {
+  left: 100px;
+  width: 39px;
+  height: 44px;
+  background: url("../img/why-icon-1.png") no-repeat;
+}
+
+.advantage--2:before {
+  left: 100px;
+  width: 42px;
+  height: 38px;
+  background: url("../img/why-icon-2.png") no-repeat;
+}
+
+.advantage--3:before {
+  left: 110px;
+  width: 40px;
+  height: 38px;
+  background: url("../img/why-icon-3.png") no-repeat;
+}
+
+.advantage--4:before {
+  left: 100px;
+  width: 54px;
+  height: 54px;
+  background: url("../img/why-icon-4.png") no-repeat;
+}
+
+.advantage--5:before {
+  left: 100px;
+  width: 40px;
+  height: 44px;
+  background: url("../img/why-icon-5.png") no-repeat;
+}
+
+.advantage--6:before {
+  left: 120px;
+  width: 69px;
+  height: 54px;
+  background: url("../img/why-icon-6.png") no-repeat;
+}
+
+.advantage__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #ff9000;
+  font-family: "Helveticaneuecyr Roman", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.advantage__description {
+  margin: 0;
+  color: #d0d0d0;
+  font-size: 17px;
+}
+
+.advantage__description span {
+  color: #ff9000;
+}
+
+.advantage__btn-link {
+  display: block;
+  margin-top: 3px;
+  color: #029dff;
+  font-size: 15px;
+}
+
 .calculation {
   padding: 85px 0 0;
   background: #f9faff;
@@ -1088,19 +1220,25 @@ input::-moz-placeholde {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 25px;
-}
-
-.btn-floor:hover {
-  color: #ff9000;
+  font-size: 0;
 }
 
 .btn-floor--down {
-  left: 5px;
+  left: 10px;
+  background: white url("../img/arrow-down.png") no-repeat center;
+}
+
+.btn-floor--down:hover {
+  background: white url("../img/arrow-down-hover.png") no-repeat center;
 }
 
 .btn-floor--up {
-  right: 5px;
+  right: 10px;
+  background: white url("../img/arrow-up.png") no-repeat center;
+}
+
+.btn-floor--up:hover {
+  background: white url("../img/arrow-up-hover.png") no-repeat center;
 }
 
 .form-column--input input[type="text"] {
