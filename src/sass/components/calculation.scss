@@ -1,0 +1,132 @@
+.calculation {
+  background: #f9faff;
+  padding: 85px 0 0;
+
+  &__title {
+    @include titles;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 23px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 368px;
+      height: 226px;
+      background: url("../img/calc-house.png") no-repeat;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+    }
+  }
+}
+
+.form-row {
+  @include clearfix;
+  padding-bottom: 75px;
+}
+
+.form-column {
+  float: left;
+
+  &--slider {
+    width: 665px;
+    margin-right: 40px;
+  }
+
+  &--floor {
+    width: 116px;
+  }
+
+  &--house {
+    float: right;
+    width: 220px;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+  }
+}
+
+.form-slider {
+  background: url("../img/form-slider.png") no-repeat;
+  width: 665px;
+  height: 50px;
+
+  &__range {
+    height: 13px;
+    width: 665px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+  }
+
+  &__bg {
+    background: linear-gradient(#feab16,#ff7500) $orange;
+    width: 136px;
+    height: 9px;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid $orange;
+    z-index: 1;
+  }
+
+  &__toggle {
+    position: absolute;
+    z-index: 2;
+    background: url("../img/inputpoint.png") no-repeat;
+    width: 25px;
+    height: 30px;
+    left: 122px;
+    bottom: -11px;
+  }
+}
+
+.form-row--floor {
+  position: relative;
+
+  input[type="text"] {
+    width: 116px;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 42px;
+    color: $orange;
+  }
+}
+
+.btn-floor {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background: none;
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 25px;
+  color: #C3C2C2;;
+
+
+  &:hover {
+    color: $orange;
+  }
+
+  &--down {
+    left: 5px;
+  }
+
+  &--up {
+    right: 5px;
+  }
+}
+
+.form-column--input {
+  input[type="text"] {
+    width: 305px;
+    margin-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

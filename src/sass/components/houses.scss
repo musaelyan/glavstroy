@@ -1,0 +1,65 @@
+.our-houses {
+
+  padding-top: 85px;
+  padding-bottom: 70px;
+
+  &__title {
+    @include titles;
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  &__description {
+    @include description;
+    width: 920px;
+    margin-top: 25px;
+    padding-left: 60px;
+  }
+
+}
+
+.houses {
+  font-size: 0;
+  margin-top: 85px;
+}
+
+.house {
+  display: inline-block;
+  vertical-align: top;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 21px;
+  color: $grey;
+  font-weight: normal;
+  width: 350px;
+  margin-right: 55px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 350px;
+    height: 226px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__title {
+    padding-left: 60px;
+    font-family: $base-font;
+    font-size: 25px;
+    line-height: 29px;
+    color: $orange;
+    margin: 0;
+    margin: 15px 0 20px;
+  }
+
+  &__description {
+    padding-left: 60px;
+    padding-right: 35px;
+    margin-bottom: 30px;
+  }
+
+}

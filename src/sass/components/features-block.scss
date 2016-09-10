@@ -5,7 +5,7 @@
 .features__title {
   @include titles;
   transform: translateY(-20px);
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 }
 
 .features {
@@ -30,16 +30,41 @@
     line-height: 29px;
     color: $orange;
     margin: 0;
-    margin: 40px 0;
+    margin: 50px 0 40px;
     font-weight: normal;
   }
 
   &:before {
     content: "";
-    width: 100px;
-    height: 85px;
-    background: $grey;
     display: block;
+  }
+
+  &--1:before {
+    background: url("../img/feature1.png") no-repeat;
+    width: 108px;
+    height: 87px;
+    margin-left: 56px;
+  }
+
+  &--2:before {
+    background: url("../img/feature2.png") no-repeat;
+    width: 76px;
+    height: 85px;
+    margin-left: 56px;
+  }
+
+  &--3:before {
+    background: url("../img/feature3.png") no-repeat;
+    width: 85px;
+    height: 85px;
+    margin-left: 50px;
+  }
+
+  &--4:before {
+    background: url("../img/feature4.png") no-repeat;
+    width: 85px;
+    height: 85px;
+    margin-left: 76px;
   }
 
   &__tip {
@@ -48,7 +73,6 @@
 
   &__description {
     margin: 0;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin: 15px 0 27px;
   }
 }

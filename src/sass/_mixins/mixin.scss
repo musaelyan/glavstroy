@@ -11,4 +11,12 @@
   font-size: 50px;
   line-height: 50px;
   color: $orange;
+  margin: 0; 
+}
+
+@mixin description {
+  color: #646464;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
 }

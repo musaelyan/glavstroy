@@ -2,12 +2,16 @@ input[type="text"],
 textarea,
 select,
 input[type="password"] {
+  border: none;
+  outline: none;
+  background: white;
+  box-shadow: 1px -1px 1px 0px #eceaea;
+  border: 1px solid #f1f2f6;
   box-sizing: border-box;
   width: 100%;
-  outline: none;
-  font-family: $base-font;
-  font-size: 18px;
-  line-height: 20px;
+  height: 55px;
+  color: $grey;
+  border-radius: 4px;
 }
 
 label {
