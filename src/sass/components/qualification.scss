@@ -1,0 +1,117 @@
+.qualification-slider__big-images {
+  display: none;
+}
+
+.qualification-slider {
+  background-color: #ffffff;
+  position: relative;
+
+  &__controls {
+    position: absolute;
+    bottom: 35px;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 0;
+  }
+
+  &__control {
+    width: 13px;
+    height: 7px;
+    background: #e8e8e8;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 1px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      background: linear-gradient(#feab16,#ff7500) $orange;
+    }
+  }
+
+
+}
+
+.management-slide {
+  padding: 90px 0 95px;
+  position: relative;
+  @include clearfix;
+
+  &__image {
+    width: 214px;
+    height: 214px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 75px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__content {
+    float: left;
+    width: 680px;
+  }
+
+  &__name {
+    font-size: 27px;
+    line-height: 29px;
+    color: $orange;
+    padding-top: 5px;
+  }
+
+  &__post {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+
+  &__footer {
+    @include clearfix;
+  }
+
+  &__footer-content {
+    font-size: 15px;
+    width: 330px;
+    float: left;
+  }
+
+  &__footer-link {
+    float: left;
+    font-size: 15px;
+    display: block;
+    width: 260px;
+    padding-left: 25px;
+    color: #3d53c3;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      content: "";
+      display: block;
+      background: url("../img/mail-icon.png") no-repeat;
+      width: 15px;
+      height: 12px;
+    }
+  }
+
+
+
+
+  &--1 {
+
+  }
+
+  &--2 {
+    display: none;
+  }
+}

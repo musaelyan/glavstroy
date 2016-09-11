@@ -568,6 +568,14 @@ body {
   font-size: 20px;
 }
 
+.btn-link {
+  display: block;
+  margin-top: 3px;
+  color: #029dff;
+  font-size: 15px;
+  font-size: 17px;
+}
+
 input[type="text"],
 textarea,
 select,
@@ -1088,13 +1096,6 @@ select {
 
 .advantage__description span {
   color: #ff9000;
-}
-
-.advantage__btn-link {
-  display: block;
-  margin-top: 3px;
-  color: #029dff;
-  font-size: 15px;
 }
 
 .calculation {
@@ -1874,6 +1875,130 @@ select {
   color: #d0d0d0;
   font-size: 20px;
   line-height: 30px;
+}
+
+.qualification-slider__big-images {
+  display: none;
+}
+
+.qualification-slider {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.qualification-slider__controls {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0;
+}
+
+.qualification-slider__control {
+  display: inline-block;
+  width: 13px;
+  height: 7px;
+  margin-right: 10px;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  background: #e8e8e8;
+  vertical-align: top;
+}
+
+.qualification-slider__control:last-child {
+  margin-right: 0;
+}
+
+.qualification-slider__control--active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#feab16), to(#ff7500)) #ff9000;
+  background: -webkit-linear-gradient(#feab16, #ff7500) #ff9000;
+  background:         linear-gradient(#feab16, #ff7500) #ff9000;
+}
+
+.management-slide {
+  position: relative;
+  padding: 90px 0 95px;
+}
+
+.management-slide:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.management-slide__image {
+  float: left;
+  width: 214px;
+  height: 214px;
+  margin-right: 75px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.management-slide__image img {
+  display: block;
+}
+
+.management-slide__content {
+  float: left;
+  width: 680px;
+}
+
+.management-slide__name {
+  padding-top: 5px;
+  color: #ff9000;
+  font-size: 27px;
+  line-height: 29px;
+}
+
+.management-slide__post {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.management-slide__description {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.management-slide__footer:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.management-slide__footer-content {
+  float: left;
+  width: 330px;
+  font-size: 15px;
+}
+
+.management-slide__footer-link {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  padding-left: 25px;
+  color: #3d53c3;
+  font-size: 15px;
+}
+
+.management-slide__footer-link:before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: url("../img/mail-icon.png") no-repeat;
+  content: "";
+}
+
+.management-slide--2 {
+  display: none;
 }
 
 /*=== страницы ===*/
