@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Title</title>
-		<meta name="keywords" content="keyword1, keywords2">
-		<meta name="description" content="web-page description">
+    <meta name="keywords" content="keyword1, keywords2">
+    <meta name="description" content="web-page description">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/jquery-2.2.0.min.js"></script>
   </head>
   <body>
 
@@ -178,9 +177,9 @@
               <div class="form-column form-column--floor">
                 <div class="form-column__title">Этажность</div>
                 <div class="form-row--floor">
-                  <button type="button" class="btn-floor btn-floor--down"><</button>
+                  <button type="button" class="btn-floor btn-floor--down js-number" data-type="0"><</button>
                   <input type="text" value="2" required>
-                  <button type="button" class="btn-floor btn-floor--up">></button>
+                  <button type="button" class="btn-floor btn-floor--up js-number" data-type="1">></button>
                 </div>
               </div>
               <div class="form-column form-column--house">
@@ -388,5 +387,6 @@
       </div>
     </footer>
 
+    <script src="js/script.min.js"></script>
   </body>
 </html>
