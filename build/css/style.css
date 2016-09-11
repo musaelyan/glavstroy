@@ -1159,43 +1159,102 @@ select {
 
 .form-slider {
   width: 665px;
-  height: 50px;
-  background: url("../img/form-slider.png") no-repeat;
 }
 
-.form-slider__range {
+.form-slider__deliver {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  margin-top: 23px;
+  margin-left: 5px;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.form-slider__deliver div {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 665px;
-  height: 13px;
-  -webkit-border-radius: 7px;
-          border-radius: 7px;
 }
 
-.form-slider__bg {
+.form-slider__deliver div:before {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 136px;
-  height: 9px;
-  border: 2px solid #ff9000;
-  -webkit-border-radius: 7px;
-          border-radius: 7px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#feab16), to(#ff7500)) #ff9000;
-  background: -webkit-linear-gradient(#feab16, #ff7500) #ff9000;
-  background:         linear-gradient(#feab16, #ff7500) #ff9000;
+  top: -21px;
+  left: 50%;
+  width: 3px;
+  height: 10px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #cecece;
+  content: "";
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.form-slider__toggle {
-  position: absolute;
-  bottom: -11px;
-  left: 122px;
-  z-index: 2;
-  width: 25px;
-  height: 30px;
-  background: url("../img/inputpoint.png") no-repeat;
+.form-slider__deliver div:nth-child(2) {
+  -webkit-transform: translateX(6px);
+      -ms-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
+.form-slider__deliver div:nth-child(3) {
+  -webkit-transform: translateX(12px);
+      -ms-transform: translateX(12px);
+          transform: translateX(12px);
+}
+
+.form-slider__deliver div:nth-child(4) {
+  -webkit-transform: translateX(18px);
+      -ms-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+.form-slider__deliver div:nth-child(5) {
+  -webkit-transform: translateX(19px);
+      -ms-transform: translateX(19px);
+          transform: translateX(19px);
+}
+
+.form-slider__deliver div:nth-child(6) {
+  -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+          transform: translateX(16px);
+}
+
+.form-slider__deliver div:nth-child(7) {
+  -webkit-transform: translateX(14px);
+      -ms-transform: translateX(14px);
+          transform: translateX(14px);
+}
+
+.form-slider__deliver div:nth-child(8) {
+  -webkit-transform: translateX(12px);
+      -ms-transform: translateX(12px);
+          transform: translateX(12px);
+}
+
+.form-slider__deliver div:nth-child(9) {
+  -webkit-transform: translateX(8px);
+      -ms-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+.form-slider__deliver div:nth-child(10) {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.form-slider__deliver div:nth-child(11) {
+  -webkit-transform: translateX(2px);
+      -ms-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 .form-row--floor {
@@ -1247,6 +1306,114 @@ select {
   margin-right: 30px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+[type=range] {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+[type=range]:focus {
+  outline: none;
+}
+
+[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 13px;
+  border: 2px solid #ff9000;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feab16), to(#ff7500));
+  background: -webkit-linear-gradient(#feab16, #ff7500);
+  background:         linear-gradient(#feab16, #ff7500);
+  -webkit-box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+          box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+[type=range]::-webkit-slider-thumb {
+  width: 25px;
+  height: 30px;
+  margin-top: -10.5px;
+  border: 0 solid #ffffff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background: url("../img/inputpoint.png") no-repeat;
+  -webkit-box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+          box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer;
+
+  -webkit-appearance: none;
+}
+
+[type=range]::-moz-range-track {
+  width: 100%;
+  height: 13px;
+  border: 2px solid #ff9000;
+  border-radius: 7px;
+  background: linear-gradient(#feab16, #ff7500);
+  box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[type=range]::-moz-range-thumb {
+  width: 25px;
+  height: 30px;
+  border: 0 solid #ffffff;
+  border-radius: 8px;
+  background: url("../img/inputpoint.png") no-repeat;
+  box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer;
+}
+
+[type=range]::-ms-track {
+  width: 100%;
+  height: 13px;
+  border-width: 25px 0;
+  border-color: transparent;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[type=range]::-ms-fill-lower {
+  border: 2px solid #ff9000;
+  border-radius: 14px;
+  background: linear-gradient(#feab16, #ff7500);
+  box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+}
+
+[type=range]::-ms-fill-upper {
+  border: 2px solid #ff9000;
+  border-radius: 14px;
+  background: linear-gradient(#feab16, #ff7500);
+  box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+}
+
+[type=range]::-ms-thumb {
+  width: 25px;
+  height: 30px;
+  border: 0 solid #ffffff;
+  border-radius: 8px;
+  background: url("../img/inputpoint.png") no-repeat;
+  box-shadow: 0 0 0 transparent, 0 0 0 rgba(13, 13, 13, 0);
+  cursor: pointer;
+}
+
+[type=range]:focus::-ms-fill-lower {
+  background: linear-gradient(#feab16, #ff7500);
+}
+
+[type=range]:focus::-ms-fill-upper {
+  background: linear-gradient(#feab16, #ff7500);
 }
 
 .points {
