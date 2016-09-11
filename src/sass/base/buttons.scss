@@ -48,10 +48,25 @@
   text-shadow: -1px 1px 1px #444;
 }
 
+.btn--footer {
+  width: 100%;
+  display: block;
+  text-shadow: -1px 1px 1px #444;
+  font-size: 20px;
+  height: 55px;
+  box-shadow: 0 0 3px 1px #787575;
+}
+
 .btn-link {
   font-size: 15px;
   color: #029dff;
   display: block;
   margin-top: 3px;
   font-size: 17px;
+
+  &--footer {
+    font-size: 18px;
+    display: inline-block;
+  }
+
 }

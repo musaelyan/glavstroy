@@ -1,0 +1,35 @@
+.questions {
+  font-size: 0;
+  padding: 70px 0 60px;
+
+  &__block {
+    display: inline-block;
+    vertical-align: middle;
+    &:first-child {
+      margin-right: 130px;
+    }
+  }
+
+  &__title {
+    font-family: $Panton;
+    font-size: 40px;
+    line-height: 47px;
+    color: $orange;
+  }
+
+  &__description {
+    color: #646464;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $Panton;
+    font-size: 50px;
+    line-height: 50px;
+    color: $orange;
+  }
+
+}

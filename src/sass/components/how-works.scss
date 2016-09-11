@@ -1,5 +1,5 @@
 .how-works {
-  background-image: url("../img/advantages.jpg");
+  background-image: url("../img/works-bg.jpg");
   background-color: #1d2734;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,12 +10,131 @@
   &__title {
     @include titles;
     margin-bottom: 40px;
+    padding-left: 20px;
   }
 
   &__description {
     @include description;
     color: #d0d0d0;
     margin-bottom: 75px;
+    width: 1070px;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+}
+
+.works {
+  font-size: 0;
+}
+
+.work {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 70px;
+  width: 245px;
+  margin-right: 60px;
+  padding-top: 90px;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/circles.png") no-repeat;
+    width: 150px;
+    height: 8px;
+    left: 180px;
+    top: 20px;
+  }
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  &--1:before {
+    background: url("../img/work-icon-1.png") no-repeat;
+    width: 30px;
+    height: 58px;
+    left: 90px;
+  }
+
+  &--2:before {
+    background: url("../img/work-icon-2.png") no-repeat;
+    width: 61px;
+    height: 57px;
+    left: 80px;
+  }
+
+  &--3:before {
+    background: url("../img/work-icon-3.png") no-repeat;
+    width: 62px;
+    height: 63px;
+    left: 65px;
+  }
+
+  &--4:before {
+    background: url("../img/work-icon-4.png") no-repeat;
+    width: 54px;
+    height: 53px;
+    left: 80px;
+  }
+
+  &--5:before {
+    background: url("../img/work-icon-5.png") no-repeat;
+    width: 46px;
+    height: 64px;
+    left: 85px;
+  }
+
+  &--6:before {
+    background: url("../img/work-icon-6.png") no-repeat;
+    width: 69px;
+    height: 54px;
+    left: 75px;
+  }
+
+  &--7:before {
+    background: url("../img/work-icon-7.png") no-repeat;
+    width: 49px;
+    height: 64px;
+    left: 80px;
+  }
+
+  &--8:before {
+    background: url("../img/work-icon-8.png") no-repeat;
+    width: 45px;
+    height: 60px;
+    left: 80px;
+  }
+
+  &__title {
+    font-family: $base-font;
+    font-size: 22px;
+    line-height: 27px;
+    color: $orange;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+
+  &__description {
+    font-size: 17px;
+    color: #d0d0d0;
+    margin: 0;
+
+    span {
+      color: $orange;
+    }
   }
 
 }

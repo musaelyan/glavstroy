@@ -1,0 +1,79 @@
+.footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-color: #1d2734;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 75px;
+
+  &__title {
+    font-size: 50px;
+    font-family: $Panton;
+    color: $orange;
+    margin: 0;
+    margin-bottom: 35px;
+    line-height: 60px;
+    transform: translateY(-10px);
+  }
+
+  &__contacts {
+    font-size: 25px;
+    font-family: $Panton;
+    color: $orange;
+    line-height: 30px;
+  }
+
+  &__link {
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: $Panton;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__block-link {
+    text-align: right;
+
+    &--small {
+      width: 280px;
+    }
+  }
+
+  &__block-left {
+    width: 370px;
+    float: left;
+  }
+
+  &__block-right {
+    width: 660px;
+    float: right;
+  }
+
+  &__form {
+    @include clearfix;
+  }
+
+  &__form-column {
+    float: left;
+    box-sizing: border-box;
+    width: 315px;
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__form-row {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: #c6c6c6;
+    margin: 0;
+    font-size: 17px;
+    line-height: 23px;
+    width: 505px;
+    margin-bottom: 35px;
+  }
+}

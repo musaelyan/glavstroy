@@ -12,6 +12,7 @@ input[type="password"] {
   height: 55px;
   color: $grey;
   border-radius: 4px;
+  padding: 5px 30px;
 }
 
 label {
@@ -36,4 +37,11 @@ select {
   cursor: pointer;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 205px;
+  resize: none;
+  padding-top: 15px;
 }

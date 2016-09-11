@@ -80,8 +80,8 @@
 
   &--6:before {
     background: url("../img/why-icon-6.png") no-repeat;
-    width: 69px;
-    height: 54px;
+    width: 24px;
+    height: 42px;
     left: 120px;
   }
 
@@ -92,6 +92,7 @@
     color: $orange;
     margin: 0;
     margin-bottom: 30px;
+    font-weight: normal;
   }
 
   &__description {
@@ -102,6 +103,6 @@
     span {
       color: $orange;
     }
-  }  
+  }
 
 }
