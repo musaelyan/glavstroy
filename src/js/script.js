@@ -16,4 +16,9 @@ $(function(){
     }
     field.val(rezult);
   });
+
+  $('.js-set-hvalue').on('click', function(e) {
+    var hfiled = $('.hvalue');
+    hfiled.val($(this).data('hvalue'));
+  });
 })

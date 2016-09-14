@@ -15,6 +15,13 @@ input[type="password"] {
   padding: 5px 30px;
 }
 
+textarea:hover,
+textarea:focus,
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border: 1px solid #b7b7b7;
+}
+
 label {
   cursor: pointer;
 }
@@ -44,4 +51,10 @@ textarea {
   height: 205px;
   resize: none;
   padding-top: 15px;
+}
+
+input[type="hidden"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }

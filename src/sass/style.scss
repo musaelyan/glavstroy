@@ -4,13 +4,13 @@
 
 
 /*=== базовый слой ===*/
-
 @import "base/__variable";
 @import "base/__normalize";
 @import "base/typography";
 @import "base/buttons";
 @import "base/forms";
-
+@import "base/popup";
+@import "base/fotorama";
 
 
 /*=== компоненты ===*/

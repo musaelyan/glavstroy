@@ -17,7 +17,7 @@
 
 .reviews-slider {
   position: relative;
-  padding: 40px 0 80px;
+  padding: 40px 0 40px;
 
   &__controls {
     position: absolute;
@@ -25,6 +25,7 @@
     transform: translateX(-50%);
     left: 50%;
     font-size: 0;
+    display: none;
   }
 
   &__control {
@@ -102,10 +103,10 @@
   }
 
   &--2 {
-    display: none;
+
   }
 
   &--3 {
-    display: none;
+
   }
 }

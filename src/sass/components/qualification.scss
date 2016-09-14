@@ -1,21 +1,20 @@
-.qualification-slider__big-images {
+.qualification-slider__big-imagesddd {
   display: none;
 }
 
 .qualification {
   padding-top: 85px;
-  padding-bottom: 20px;
 
   &__title {
     @include titles;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 100px;
   }
 
   &__description {
     @include description;
     margin-top: 25px;
-    padding-left: 60px;
+    text-align: center;
   }
 }
 
@@ -56,7 +55,6 @@
   }
 
   &__small-images {
-    padding: 0 50px;
     font-size: 0px;
   }
 
@@ -65,90 +63,56 @@
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
+    margin-right: 60px;
+    width: 228px;
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+    img {
+      display: block;
+      width: 228px;
+    }
   }
-
-
 }
 
-.qualification-slider {
-  padding: 40px 0 70px;
-  position: relative;
-  @include clearfix;
 
-  &__image {
-    width: 214px;
-    height: 214px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 75px;
+.overlay {
+    background-color: black; /* Цвет фона */
+    opacity: 0; /* Изначально непрозрачный */
+    position: fixed; /* Фиксированное позиционирование */
+    z-index: 9980;
+    right: 0;    /* Справа 0 */
+    top: 0;    /* Сверху 0 */
+    left: 0;    /* Слева 0 */
+    bottom: 0;    /* Снизу 0 */
+    visibility: hidden; /* Изначально невидимый */
+
+    /* transition старт */
+    transition: 0.5s ease;
+}
+
+.overlay:target {
+    visibility: visible; /* Делает видимым */
+    opacity: 0.8;    /* Фон становится полностью прозрачным */
+}
+
+.qualification-slider__big-images {
+    position: fixed;    /* Фиксированное расположение */
+    visibility: hidden;    /* Изначально - спрятан */
+    z-index: 9999;    /* z-index */
+    transform: translateX(-50%);
+    left: 45%;
+    top: 0px;
 
     img {
       display: block;
+      height: 600px;
+      width: 576px;
     }
-  }
+}
 
-  &__content {
-    float: left;
-    width: 680px;
-  }
-
-  &__name {
-    font-size: 27px;
-    line-height: 29px;
-    color: $orange;
-    padding-top: 5px;
-  }
-
-  &__post {
-    font-size: 15px;
-    margin-top: 15px;
-  }
-
-  &__description {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 20px 0;
-  }
-
-  &__footer {
-    @include clearfix;
-  }
-
-  &__footer-content {
-    font-size: 15px;
-    width: 330px;
-    float: left;
-  }
-
-  &__footer-link {
-    float: left;
-    font-size: 15px;
-    display: block;
-    width: 260px;
-    padding-left: 25px;
-    color: #3d53c3;
-    position: relative;
-    &:before {
-      position: absolute;
-      left: 0;
-      top: 5px;
-      content: "";
-      display: block;
-      background: url("../img/mail-icon.png") no-repeat;
-      width: 15px;
-      height: 12px;
-    }
-  }
-
-
-
-
-  &--1 {
-
-  }
-
-  &--2 {
-    display: none;
-  }
+.overlay:target+.qualification-slider__big-images {
+    opacity: 1; /* Убирает прозрачность */
+    visibility: visible; /* Делает видимым */
 }

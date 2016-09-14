@@ -1,0 +1,103 @@
+// overlay изменяет фон сайта и делает его полностью прозрачным
+
+.overlay {
+    background-color: black; /* Цвет фона */
+    opacity: 0; /* Изначально непрозрачный */
+    position: fixed; /* Фиксированное позиционирование */
+    z-index: 9980;
+    right: 0;    /* Справа 0 */
+    top: 0;    /* Сверху 0 */
+    left: 0;    /* Слева 0 */
+    bottom: 0;    /* Снизу 0 */
+    visibility: hidden; /* Изначально невидимый */
+
+    /* transition старт */
+    transition: 0.5s ease;
+}
+
+.overlay:target {
+    visibility: visible; /* Делает видимым */
+    opacity: 0.8;    /* Фон становится полностью прозрачным */
+}
+
+.popup {
+    position: fixed;    /* Фиксированное расположение */
+    visibility: hidden;    /* Изначально - спрятан */
+    z-index: 9999;    /* z-index */
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20px;
+
+    width: 370px;
+    padding: 25px 45px;
+    background-color: #f4f4f4; /* Фон */
+    border-radius: 7px;
+}
+
+.overlay:target+.popup {
+    opacity: 1; /* Убирает прозрачность */
+    visibility: visible; /* Делает видимым */
+}
+
+.popup-close {
+  display: none;
+  width: 3px;
+  height: 20px;
+  background: red;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  font-size: 0px;
+  transform: rotate(45deg);
+}
+
+.popup-close:after {
+  content: "";
+  display: block;
+  transform: rotate(-90deg);
+  width: 3px;
+  height: 20px;
+  background: red;
+  position: absolute;
+  top: 0;
+}
+
+.popup {
+
+  &__logo {
+    margin: 10px auto 30px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 31px;
+    color: #6a6a6a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  &__form-line {
+    margin-bottom: 15px;
+  }
+
+  &__btn-line {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__footer {
+    color: #515151;
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-align: center;
+    padding: 0 40px;
+  }
+}

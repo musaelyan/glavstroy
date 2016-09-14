@@ -15,6 +15,7 @@
     margin-bottom: 35px;
     line-height: 60px;
     transform: translateY(-10px);
+    font-weight: normal;
   }
 
   &__contacts {
@@ -35,9 +36,12 @@
 
   &__block-link {
     text-align: right;
+    margin-top: 20px;
 
     &--small {
-      width: 280px;
+      width: 285px;
+      margin-top: 0px;
+      margin-bottom: 15px;
     }
   }
 
@@ -59,7 +63,7 @@
     float: left;
     box-sizing: border-box;
     width: 315px;
-    &:first-child {
+    &--1 {
       margin-right: 30px;
     }
   }

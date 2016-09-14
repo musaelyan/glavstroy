@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
-    <meta name="keywords" content="keyword1, keywords2">
-    <meta name="description" content="web-page description">
+    <title>Главстрой </title>
+    <meta name="keywords" content="готовые дома, строительство, Краснодар">
+    <meta name="description" content="Готовые дома и строительство на заказ в Краснодаре и Краснодарском крае по ценам, которые Вам понравятся.">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
@@ -22,15 +22,50 @@
             <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="" class="btn btn--call">Заказать звонок</a>
+        <a href="#RequestCall" class="js-set-hvalue btn btn--call" data-hvalue="Заказать звонок - хедер">Заказать звонок</a>
       </div>
     </header>
+
+    <a href="#close" class="overlay" id="RequestCall"></a>
+      <div class="popup">
+        <a href="#close" class="popup-close">крестик</a>
+        <div class="popup__logo">
+          <img src="img/logo-popup.png" alt="GLAVSTROY" width="132" height="52">
+        </div>
+        <div class="popup__title">Получите консультацию специалиста Главстрой</div>
+        <p class="popup__description">Заполните контакты, и наш специалист<br>свяжется с Вами для бесплатной консультации</p>
+        <div class="popup__form">
+          <form method="post" action="send.php">
+            <input type="hidden" class="hvalue" name="section" value="Заказать звонок">
+            <div class="popup__form-line">
+              <input class="form__field" type="text" placeholder="Ваше имя" name="name" required>
+            </div>
+            <div class="popup__form-line">
+              <input class="form__field" type="text" placeholder="Ваш номер телефона" name="phone" id="phone1" required>
+            </div>
+            <div class="popup__btn-line">
+              <button class="btn btn--popup" type="submit">Получить консультацию</button>
+            </div>
+          </form>
+        </div>
+        <div class="popup__footer">Или позвоните нам по телефону 8 (800) 333 47 55</div>
+      </div>
+
+
+    <a href="#close" class="overlay" id="thanks"></a>
+      <div class="popup">
+        <div class="popup__logo">
+          <img src="img/logo-popup.png" alt="GLAVSTROY" width="132" height="52">
+        </div>
+        <div class="popup__title">Спасибо за оставленную заявку! Мы перезвоним Вам в самое ближайшее время.</div>
+        <div class="popup__btn-line"><a class="btn btn--popup" href="#close">Вернуться на сайт</a></div>
+      </div>
 
     <section class="promo">
       <div class="container">
         <div class="promo-content">
           <div class="promo-content__image"><img src="img/promo-title.png" alt="pic" width="702" height="245"></div>
-          <h1 class="promo-content__title">Готовые дома и строительство на заказ в Краснодаре<br> и Краснодарском крае по ценам, которые вам понравятся.</h1>
+          <h1 class="promo-content__title">Готовые дома и строительство на заказ в Краснодаре<br> и Краснодарском крае по ценам, которые Вам понравятся.</h1>
         </div>
         <a href="" class="promo__link">ссылка для скрола</a>
       </div>
@@ -45,28 +80,28 @@
             <h3 class="feature__title">Варианты готовых<br>и новых домов:</h3>
             <div class="feature__tip">От 12 000  Рублей за 1м<sup>2</sup></div>
             <p class="feature__description">Для Вашего удобства и экономии времени, Вы можете рассмотреть ряд новых, построенных домов. Заселяйтесь уже сейчас! </p>
-            <a href="#" class="btn btn--features">Смотреть варианты</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--features" data-hvalue="Варианты готовых и новых домов - смотреть варианты">Смотреть варианты</a>
           </div>
 
           <div class="feature feature--2">
             <h3 class="feature__title">Постройка домов<br>на заказ и под ключ:</h3>
             <div class="feature__tip">От 11 000  Рублей за  1м<sup>2</sup></div>
             <p class="feature__description">Хотите жить в доме своей мечты? Мы вместе составим и реализуем уникальный план-проект Вашего дома, учитывая любые желания.</p>
-            <a href="" class="btn btn--features">Заказать дом</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--features" data-hvalue="Варианты готовых и новых домов - Постройка домов">Заказать дом</a>
           </div>
 
           <div class="feature feature--3">
             <h3 class="feature__title">Варианты на этапе строительства:</h3>
             <div class="feature__tip">Есть дома на разных 1м<sup>2</sup></div>
             <p class="feature__description">Вы не только получаете дом в нужный срок и избегаете очереди, но и можете вносить свои изменения на всех этапах строительства и ремонта.</p>
-            <a href="" class="btn btn--features">Подробнее о вариантах</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--features" data-hvalue="Варианты готовых и новых домов - Варианты на этапе строительства">Подробнее о вариантах</a>
           </div>
 
           <div class="feature feature--4">
             <h3 class="feature__title">Переезд в Краснодар и Краснодарский край</h3>
             <div class="feature__tip">Уже знаем “что к чему”</div>
             <p class="feature__description">Готовы для переезда на юг? Мы поможем обрести новый дом в Краснодаре и крае. Избавим от всех проблем на каждом этапе переезда.</p>
-            <a href="" class="btn btn--features">Узнать подробнее</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--features" data-hvalue="Варианты готовых и новых домов - Переезд в Краснодар">Узнать подробнее</a>
           </div>
         </div>
       </div>
@@ -80,21 +115,24 @@
           <span class="slider__control"></span>
         </div>
 
-        <div class="slide slide--1">
-          <div class="slider__icon"><img src="img/slider-icon-1.png" alt="25 лет" width="460" height="104"></div>
-          <h2 class="slider__title">Гарантия на каждый дом, который мы построили!</h2>
-          <p class="slider__description">Мы не только отвечаем совестью за отличное качество наших работ, но и готовы нести документальную ответственность за надежность Вашего дома!</p>
+        <div class="fotorama" data-width="1140" data-height="418" data-autoplay="3000">
+          <div class="slide slide--1">
+            <div class="slider__icon"><img src="img/slider-icon-1.png" alt="25 лет" width="460" height="104"></div>
+            <h2 class="slider__title">Гарантия на каждый дом, который мы построили!</h2>
+            <p class="slider__description">Мы не только отвечаем совестью за отличное качество наших работ, но и готовы нести документальную ответственность за надежность Вашего дома!</p>
+          </div>
+          <div class="slide slide--2">
+            <div class="slider__icon"><img src="img/slider-icon-2.png" alt="35 семей" width="655" height="131"></div>
+            <h2 class="slider__title">Мы поселили в новый, их собственный дом.</h2>
+            <p class="slider__description">Мы знаем, какое счастье для семьи  - переехать в собственное жилище. Это заставляет уделять ещё больше внимания качеству наших домов.</p>
+          </div>
+          <div class="slide slide--3">
+            <div class="slider__icon"><img src="img/slider-icon-3.png" alt="40% клиентов" width="671" height="67"></div>
+            <h2 class="slider__title">Приходят по рекомендациям от других семей. </h2>
+            <p class="slider__description">Мы знаем, как непросто найти компанию, которой можно доверить строительство своего дома. Поэтому мы так ценим доверие наших клиентов.</p>
+          </div>
         </div>
-        <div class="slide slide--2">
-          <div class="slider__icon"><img src="img/slider-icon-2.png" alt="35 семей" width="655" height="131"></div>
-          <h2 class="slider__title">Мы поселили в новый, их собственный дом.</h2>
-          <p class="slider__description">Мы знаем, какое счастье для семьи  - переехать в собственное жилище. Это заставляет уделять ещё больше внимания качеству наших домов.</p>
-        </div>
-        <div class="slide slide--3">
-          <div class="slider__icon"><img src="img/slider-icon-3.png" alt="40% клиентов" width="671" height="67"></div>
-          <h2 class="slider__title">Приходят по рекомендациям от других семей. </h2>
-          <p class="slider__description">Мы знаем, как непросто найти компанию, которой можно доверить строительство своего дома. Поэтому мы так ценим доверие наших клиентов.</p>
-        </div>
+
       </div>
     </section>
 
@@ -107,19 +145,19 @@
             <div class="house__image"><img src="img/house-1.png" alt="Кирпичные дома" width="350" height="226"></div>
             <h3 class="house__title">1. Кирпичные дома</h3>
             <p class="house__description">Наслаждайтесь надёжностью<br>и теплом дома. Он прослужит много лет для Вас и ваших детей.</p>
-            <a href="" class="btn btn--houses">Узнать подробнее</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--houses" data-hvalue="Кирпичные дома">Узнать подробнее</a>
           </div>
           <div class="house">
             <div class="house__image"><img src="img/house-2.png" alt="Каркасные дома" width="350" height="226"></div>
             <h3 class="house__title">2. Каркасные дома</h3>
             <p class="house__description">Лучшее соотношение цены<br>и качества делают эти дома хитом продаж</p>
-            <a href="" class="btn btn--houses">Узнать подробнее</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--houses" data-hvalue="Каркасные дома">Узнать подробнее</a>
           </div>
           <div class="house">
             <div class="house__image"><img src="img/house-3.png" alt="Блочные дома<" width="350" height="226"></div>
             <h3 class="house__title">3. Блочные дома</h3>
             <p class="house__description">Надёжное решение<br> для тех, кто хочет иметь всё<br>и не переплачивать.</p>
-            <a href="" class="btn btn--houses">Узнать подробнее</a>
+            <a href="#RequestCall" class="js-set-hvalue btn btn--houses" data-hvalue="Блочные дома">Узнать подробнее</a>
           </div>
         </div>
       </div>
@@ -150,13 +188,14 @@
       <div class="container container--calculation">
         <h2 class="calculation__title">Каким будет Ваш дом?</h2>
         <div class="form">
-          <form method="post" action="send.php">
+          <form method="post" action="sendCalc.php">
+            <input type="hidden" name="section" value="Каким будет Ваш дом?">
             <div class="form-row">
               <div class="form-column form-column--slider">
                 <div class="form-column__title">Площадь дома</div>
                 <div class="form-slider">
                   <div class="form-slider__range">
-                    <input type="range" name="ploshad" min="20" max="240" step="20">
+                    <input type="range" name="square" min="20" max="240" step="20" value="80">
                   </div>
                   <div class="form-slider__deliver">
                     <div>20</div>
@@ -178,22 +217,22 @@
                 <div class="form-column__title">Этажность</div>
                 <div class="form-row--floor js-number-wrapper">
                   <button type="button" class="btn-floor btn-floor--down js-number" data-type="0"><</button>
-                  <input type="text" class="js-number-filed" value="2" required>
+                  <input type="text" class="js-number-filed" value="2" name="floor" required>
                   <button type="button" class="btn-floor btn-floor--up js-number" data-type="1">></button>
                 </div>
               </div>
               <div class="form-column form-column--house">
                 <div class="form-column__title">Тип дома</div>
-                <select name="house-type">
-                  <option value="brick">Кирпичный</option>
-                  <option value="frame">Каркасный</option>
-                  <option value="brick">Блочный</option>
+                <select name="housetype">
+                  <option value="1">Кирпичный</option>
+                  <option value="2">Каркасный</option>
+                  <option value="3">Блочный</option>
                 </select>
               </div>
             </div>
             <div class="form-row">
               <div class="form-column form-column--input"><input type="text" name="name" placeholder="Ваше имя" required></div>
-              <div class="form-column form-column--input"><input type="text" name="phone" placeholder="Ваш телефон" required></div>
+              <div class="form-column form-column--input"><input type="text" name="phone" placeholder="Ваш телефон" id="phone2" required></div>
               <div class="form-column form-column--input"><button type="submit" class="btn btn--form-submit">Расчитать цену на такой дом</button></div>
             </div>
           </form>
@@ -209,7 +248,7 @@
           <div class="advantage advantage--1">
             <h3 class="advantage__title">1. Доступные цены</h3>
             <p class="advantage__description">Наши цены <span>ниже рыночных</span>, потому что мы работаем напрямую с поставщиками и используем новые методы</p>
-            <a href="" class="btn-link">Узнать цены</a>
+            <a href="#RequestCall" class="js-set-hvalue btn-link" data-hvalue="Почему многие выбирают нас - кнопка Узнать цены">Узнать цены</a>
           </div>
           <div class="advantage advantage--2">
             <h3 class="advantage__title">2. Опытные строители</h3>
@@ -313,33 +352,36 @@
           <span class="management-slider__control"></span>
         </div>
 
-        <div class="management-slide management-slide--1">
-          <div class="management-slide__image">
-            <img src="img/dir-img-1.png" alt="pic" width="214" height="214">
-          </div>
-          <div class="management-slide__content">
-            <div class="management-slide__name">Вячеслав Еськов</div>
-            <div class="management-slide__post">Генеральный директор и соучредитель ooo “Главстрой”</div>
-            <p class="management-slide__description">Главная цель нашей компании - найти возможности максимального качества по минимально возможной цене. Мы понимаем, что строим не просто дома, а качество жизни наших клиентов! Мы делаем это лучше с каждым днём!</p>
-            <div class="management-slide__footer">
-              <div class="management-slide__footer-content">Что-то не устраивает? Пишите - исправим!</div>
-              <a href="mailto:ad@gs123.com?subject=Сообщение%20с%20сайта" class="management-slide__footer-link">ve@gs123.com</a>
+        <div class="fotorama" data-width="1140" data-height="350" data-autoplay="5000">
+
+          <div class="management-slide management-slide--1">
+            <div class="management-slide__image">
+              <img src="img/dir-img-1.png" alt="pic" width="214" height="214">
+            </div>
+            <div class="management-slide__content">
+              <div class="management-slide__name">Вячеслав Еськов</div>
+              <div class="management-slide__post">Генеральный директор и соучредитель ooo “Главстрой”</div>
+              <p class="management-slide__description">Главная цель нашей компании - найти возможности максимального качества по минимально возможной цене. Мы понимаем, что строим не просто дома, а качество жизни наших клиентов! Мы делаем это лучше с каждым днём!</p>
+              <div class="management-slide__footer">
+                <div class="management-slide__footer-content">Что-то не устраивает? Пишите - исправим!</div>
+                <a href="mailto:ve@gs123.ru?subject=Сообщение%20с%20сайта" class="management-slide__footer-link">ve@gs123.ru</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="management-slide management-slide--2">
-          <div class="management-slide__image">
-            <img src="img/dir-img-2.png" alt="pic" width="214" height="214">
-          </div>
-          <div class="management-slide__content">
-            <div class="management-slide__name">Алексей Дидок</div>
-            <div class="management-slide__post">Главный инженер-проектировщик и соучредитель ooo “Главстрой”</div>
-            <p class="management-slide__description">Ключевая ценность нашей работы - это высокие стандарты качества, которые соблюдаются на всех этапах стройки. В стройке очень важно работать с теми, кому доверяешь. Я лично гарантирую, что доверие к нам будет оправдано!</p>
-            <div class="management-slide__footer">
-              <div class="management-slide__footer-content">Что-то не устраивает? Пишите - исправим!</div>
-              <div class="management-slide__footer-contact">
-                <a href="mailto:ad@gs123.com?subject=Сообщение%20с%20сайта" class="management-slide__footer-link">ad@gs123.com</a>
+          <div class="management-slide management-slide--2">
+            <div class="management-slide__image">
+              <img src="img/dir-img-2.png" alt="pic" width="214" height="214">
+            </div>
+            <div class="management-slide__content">
+              <div class="management-slide__name">Алексей Дидок</div>
+              <div class="management-slide__post">Главный инженер-проектировщик и соучредитель ooo “Главстрой”</div>
+              <p class="management-slide__description">Ключевая ценность нашей работы - это высокие стандарты качества, которые соблюдаются на всех этапах стройки. В стройке очень важно работать с теми, кому доверяешь. Я лично гарантирую, что доверие к нам будет оправдано!</p>
+              <div class="management-slide__footer">
+                <div class="management-slide__footer-content">Что-то не устраивает? Пишите - исправим!</div>
+                <div class="management-slide__footer-contact">
+                  <a href="mailto:ad@gs123.ru?subject=Сообщение%20с%20сайта" class="management-slide__footer-link">ad@gs123.ru</a>
+                </div>
               </div>
             </div>
           </div>
@@ -355,7 +397,7 @@
           <div class="work work--1">
             <h3 class="work__title">1. Звонок или заявка</h3>
             <p class="work__description">Свяжитесь с нами или оставьте заявку, и мы сами перезвоним Вам для бесплатной консультации</p>
-            <a href="" class="btn-link">Заказать звонок</a>
+            <a href="#RequestCall" class="js-set-hvalue btn-link" data-hvalue="Как мы работаем с клиентами - кнопка Заказать звонок">Заказать звонок</a>
           </div>
           <div class="work work--2">
             <h3 class="work__title">2. Полное обсуждение </h3>
@@ -405,26 +447,49 @@
           <a href="" class="qualification-slider__arrow qualification-slider__arrow--next">стрелка вперед</a>
 
           <div class="qualification-slider__small-images">
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-1.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-2.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-3.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-4.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-5.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-6.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-7.png" alt="pic" width="228" height="238"></a>
-            <a href="" class="qualification-slider__preview-image"><img src="img/certificate-8.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-1" class="qualification-slider__preview-image"><img src="img/certificate-1.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-2" class="qualification-slider__preview-image"><img src="img/certificate-2.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-3" class="qualification-slider__preview-image"><img src="img/certificate-3.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-4" class="qualification-slider__preview-image"><img src="img/certificate-4.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-5" class="qualification-slider__preview-image"><img src="img/certificate-5.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-6" class="qualification-slider__preview-image"><img src="img/certificate-6.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-7" class="qualification-slider__preview-image"><img src="img/certificate-7.png" alt="pic" width="228" height="238"></a>
+            <a href="#certificate-8" class="qualification-slider__preview-image"><img src="img/certificate-8.png" alt="pic" width="228" height="238"></a>
           </div>
 
-          <div class="qualification-slider__big-images">
-            <img src="img/certificate-1.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-2.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-3.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-4.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-5.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-6.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-7.png" alt="pic" width="825" height="860">
-            <img src="img/certificate-8.png" alt="pic" width="825" height="860">
-          </div>
+          <a href="#close-certificate" class="overlay" id="certificate-1"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-1.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-2"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-2.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-3"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-3.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-4"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-4.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-5"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-5.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-6"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-6.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-7"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-7.png" alt="pic" width="576" height="600">
+            </div>
+          <a href="#close-certificate" class="overlay" id="certificate-8"></a>
+            <div class="qualification-slider__big-images">
+              <img src="img/certificate-8.png" alt="pic" width="576" height="600">
+            </div>
+
         </div>
       </div>
     </section>
@@ -442,41 +507,41 @@
           <a href="" class="reviews-slider__arrow reviews-slider__arrow--back">стрелка назад</a>
           <a href="" class="reviews-slider__arrow reviews-slider__arrow--next">стрелка вперед</a>
 
-          <div class="reviews-slide reviews-slide--1">
-            <div class="reviews-slide__image">
-              <img src="img/feedback-1.jpg" alt="pic" width="180" height="188">
+          <div class="fotorama" data-width="1140" data-height="300" data-autoplay="5000">
+
+            <div class="reviews-slide reviews-slide--1">
+              <div class="reviews-slide__image">
+                <img src="img/feedback-1.jpg" alt="pic" width="180" height="188">
+              </div>
+              <div class="reviews-slide__description">
+                <div class="reviews-slide__name">Николай Алексеевич Арнаутов</div>
+                <div class="reviews-slide__title">Получил всё, что хотел - смело рекомендую всем!</div>
+                <p class="reviews-slide__review">Выражаю огромную благодарность компании «Главстрой", потому что реально заслужили доверие! До этого уже был опыт работы с другими строителями, поэтому есть с чем сравнивать! В очень сжатые сроки вы смогли: организовать работу качественно и так, как я хотел, а это было непросто! Все было на высшем уровне, кроме того, благодаря им, я существенно сэкономил! Времени было в обрез, но мы всё равно смогли удобно и эффективно построить работу с этими замечательными людьми!</p>
+              </div>
             </div>
-            <div class="reviews-slide__description">
-              <div class="reviews-slide__name">Николай Алексеевич Арнаутов</div>
-              <div class="reviews-slide__title">Получил всё, что хотел - смело рекомендую всем!</div>
-              <p class="reviews-slide__review">Выражаю огромную благодарность компании «Главстрой", потому что реально заслужили доверие! До этого уже был опыт работы с другими строителями, поэтому есть с чем сравнивать! В очень сжатые сроки вы смогли: организовать работу качественно и так, как я хотел, а это было непросто! Все было на высшем уровне, кроме того, благодаря им, я существенно сэкономил! Времени было в обрез, но мы всё равно смогли удобно и эффективно построить работу с этими замечательными людьми!</p>
+
+            <div class="reviews-slide reviews-slide--2">
+              <div class="reviews-slide__image">
+                <img src="img/feedback-2.jpg" alt="pic" width="180" height="188">
+              </div>
+              <div class="reviews-slide__description">
+                <div class="reviews-slide__name">Евгений Фридман</div>
+                <div class="reviews-slide__title">Достойный результат в нужном бюджете</div>
+                <p class="reviews-slide__description">Долго не мог построиться из-за проблемы ограниченного бюджета. Сотрудники компании «Главстрой» помогли не только грамотно организовать процесс, учитывая все мои особенности, связанные как с финансами, так и с документами. Но и помогли подобрать максимально выгодный вариант стройки в рамках моего бюджета. Взяли многие проблемы на себя. Кроме того, сделали некоторые скидки. Взаимодействовать было очень приятно и удобно! За все труды выражаю огромнейшую благодарность! </p>
+              </div>
+            </div>
+
+            <div class="reviews-slide reviews-slide--3">
+              <div class="reviews-slide__image">
+                <img src="img/feedback-3.jpg" alt="pic" width="180" height="188">
+              </div>
+              <div class="reviews-slide__description">
+                <div class="reviews-slide__name">Сергей Геннадьевич Волков</div>
+                <div class="reviews-slide__title">Кому важна порядочность и отношение к делу - смело рекомендую!</div>
+                <p class="reviews-slide__description">Мы с женой очень давно хотели свой дом! Но из-за большой занятости не было возможности изучить все сложности, чтобы организовать процесс стройки. К счастью, один наш знакомый рекомендовал компанию «ГлавСтрой». С первых дней работы вы заслужили мое доверие, я понял, что вы не только настоящие знатоки своего дела, но и просто хорошие, честные люди, которые должным образом помогают своим клиентам.</p>
+              </div>
             </div>
           </div>
-
-          <div class="reviews-slide reviews-slide--2">
-            <div class="reviews-slide__image">
-              <img src="img/feedback-2.jpg" alt="pic" width="180" height="188">
-            </div>
-            <div class="reviews-slide__description">
-              <div class="reviews-slide__name">Евгений Фридман</div>
-              <div class="reviews-slide__title">Достойный результат в нужном бюджете</div>
-              <p class="reviews-slide__description">Долго не мог построиться из-за проблемы ограниченного бюджета. Сотрудники компании «Главстрой» помогли не только грамотно организовать процесс, учитывая все мои особенности, связанные как с финансами, так и с документами. Но и помогли подобрать максимально выгодный вариант стройки в рамках моего бюджета. Взяли многие проблемы на себя. Кроме того, сделали некоторые скидки. Взаимодействовать было очень приятно и удобно! За все труды выражаю огромнейшую благодарность! </p>
-            </div>
-          </div>
-
-          <div class="reviews-slide reviews-slide--3">
-            <div class="reviews-slide__image">
-              <img src="img/feedback-3.jpg" alt="pic" width="180" height="188">
-            </div>
-            <div class="reviews-slide__description">
-              <div class="reviews-slide__name">Сергей Геннадьевич Волков</div>
-              <div class="reviews-slide__title">Кому важна порядочность и отношение к делу - смело рекомендую!</div>
-              <p class="reviews-slide__description">Мы с женой очень давно хотели свой дом! Но из-за большой занятости не было возможности изучить все сложности, чтобы организовать процесс стройки. К счастью, один наш знакомый рекомендовал компанию «ГлавСтрой». С первых дней работы вы заслужили мое доверие, я понял, что вы не только настоящие знатоки своего дела, но и просто хорошие, честные люди, которые должным образом помогают своим клиентам.</p>
-            </div>
-          </div>
-
-
-
       </div>
     </section>
 
@@ -487,7 +552,7 @@
           <div class="questions__description">Не стесняйтесь, звоните и мы ответим.</div>
         </div>
         <div class="questions__block">
-          <a href="tel:+79117015825" class="questions__link">(911) 701-58-25</a>
+          <a href="tel:+79181991956" class="questions__link">(918) 199-19-56</a>
         </div>
       </div>
     </div>
@@ -497,24 +562,25 @@
         <div class="footer__block-left">
           <h2 class="footer__title">Наши контакты</h2>
           <div class="footer__contacts">Телефон:</div>
-          <a href="tel:+79117015825" class="footer__link">(911) 701-58-25</a>
+          <a href="tel:+79181991956" class="footer__link">(918) 199-19-56</a>
           <div class="footer__block-link footer__block-link--small">
-            <a href="" class="btn-link btn-link--footer">Заказать звонок</a>
+            <a href="#RequestCall" class="js-set-hvalue btn-link btn-link--footer" data-hvalue="Футер - Заказать звонок">Заказать звонок</a>
           </div>
           <div class="footer__contacts">Почта:</div>
-          <a href="mailto:ve@zlatostroy.com?subject=Сообщение%20с%20сайта" class="footer__link">ve@zlatostroy.com</a>
+          <a href="mailto:info@gs123.ru?subject=Сообщение%20с%20сайта" class="footer__link">info@gs123.ru</a>
         </div>
         <div class="footer__block-right">
           <p class="footer__description">Или заполните форму и наш специалист обязательно свяжется с Вами для ответа на ваш вопрос</p>
           <div class="footer__form">
-            <form action="">
-              <div class="footer__form-column">
-                <textarea name="comment" class="footer__textarea">Подскажите пожалуйста...</textarea>
+            <form method="post" action="sendfooter.php">
+              <input type="hidden" name="section" value="Форма обратной связи - футер">
+              <div class="footer__form-column footer__form-column--1">
+                <textarea name="message" class="footer__textarea" placeholder="Подскажите пожалуйста..."></textarea>
               </div>
               <div class="footer__form-column">
                 <div class="footer__form-row"><input type="text" name="name" placeholder="Ваше имя" required></div>
-                <div class="footer__form-row"><input type="text" name="phone" placeholder="Ваш номер телефона" required></div>
-                <button class="btn btn--footer" type="submit">Задать вопрос</button>
+                <div class="footer__form-row"><input type="text" name="phone" placeholder="Ваш номер телефона" id="phone3" required></div>
+                <div class="footer__block-link"><button class="btn btn--footer" type="submit">Задать вопрос</button></div>
               </div>
             </form>
           </div>
@@ -526,5 +592,13 @@
     </footer>
 
     <script src="js/script.min.js"></script>
+    <script type="text/javascript">
+      $(function($){
+        $("#phone1").mask("+7(999) 999-9999");
+        $("#phone2").mask("+7(999) 999-9999");
+        $("#phone3").mask("+7(999) 999-9999");
+      });
+    </script>
+
   </body>
 </html>
