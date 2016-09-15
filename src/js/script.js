@@ -21,4 +21,6 @@ $(function(){
     var hfiled = $('.hvalue');
     hfiled.val($(this).data('hvalue'));
   });
+
+  new WOW().init();
 })

@@ -25,4 +25,8 @@ body {
     padding: 0 50px;
     width: 1100px;
   }
+
+  &--overflow {
+    overflow: hidden;
+  }
 }
