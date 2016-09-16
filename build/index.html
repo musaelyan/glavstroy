@@ -10,16 +10,21 @@
   </head>
   <body>
 
-    <header class="header">
+    <header class="header" id="navigation-menu">
       <div class="container">
-        <div class="logo"><img src="img/logo.png" alt="GLAVSTROY" width="113" height="40"></div>
+        <div class="logo">
+          <a href="#section-1" rel="m_PageScroll2id" data-ps2id-offset="84">
+            <img src="img/logo.png" alt="GLAVSTROY" width="113" height="40">
+          </a>
+        </div>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="" class="menu__link">Что мы делаем</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Почему мы</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="#section-2" rel="m_PageScroll2id" data-ps2id-offset="140" class="menu__link">Услуги</a></li>
+            <li class="menu__item"><a href="#section-3" rel="m_PageScroll2id" data-ps2id-offset="10" class="menu__link">Дома</a></li>
+            <li class="menu__item"><a href="#section-4" rel="m_PageScroll2id" data-ps2id-offset="40" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="#section-5" rel="m_PageScroll2id" data-ps2id-offset="40" class="menu__link">Схема работы</a></li>
+            <li class="menu__item"><a href="#section-6" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="#section-7" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Контакты</a></li>
           </ul>
         </nav>
         <a href="#RequestCall" class="js-set-hvalue btn btn--call" data-hvalue="Заказать звонок - хедер">Заказать звонок</a>
@@ -61,17 +66,17 @@
         <div class="popup__btn-line"><a class="btn btn--popup" href="#close">Вернуться на сайт</a></div>
       </div>
 
-    <section class="promo">
+    <section class="promo" id="section-1">
       <div class="container">
         <div class="promo-content">
           <div class="promo-content__image"><img src="img/promo-title.png" alt="pic" width="702" height="245"></div>
           <h1 class="promo-content__title">Готовые дома и строительство на заказ в Краснодаре<br> и Краснодарском крае по ценам, которые Вам понравятся.</h1>
         </div>
-        <a href="" class="promo__link">ссылка для скрола</a>
+        <a href="#section-2" rel="m_PageScroll2id" data-ps2id-offset="140" class="promo__link">ссылка для скрола</a>
       </div>
     </section>
 
-    <section class="features-block">
+    <section class="features-block" id="section-2">
       <div class="container">
         <div class="features__title">Выберите, что подходит именно Вам:</div>
         <div class="features">
@@ -136,7 +141,7 @@
       </div>
     </section>
 
-    <section class="our-houses">
+    <section class="our-houses" id="section-3">
       <div class="container">
         <h2 class="our-houses__title">Какие дома мы строим:</h2>
         <p class="our-houses__description">Мы предлагаем только надёжные, долговечные, проверенные годами решения. Если мы берёмся за какое-либо дело - значит мы точно уверены, что умеем делать его на все 100%!</p>
@@ -233,40 +238,40 @@
             <div class="form-row">
               <div class="form-column form-column--input"><input type="text" name="name" placeholder="Ваше имя" required></div>
               <div class="form-column form-column--input"><input type="text" name="phone" placeholder="Ваш телефон" id="phone2" required></div>
-              <div class="form-column form-column--input"><button type="submit" class="btn btn--form-submit">Расчитать цену на такой дом</button></div>
+              <div class="form-column form-column--input"><button type="submit" class="btn btn--form-submit animated wow pulse" data-wow-duration="2s" data-wow-delay="0.5s">Расчитать цену на такой дом</button></div>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="advantages-block">
+    <section class="advantages-block" id="section-4">
       <div class="container">
         <h2 class="advantages-block__title">Почему многие выбирают нас?</h2>
         <p class="advantages-block__description">Положительный опыт и рекомендации - основная причина обращений наших клиентов.<br>Мы заслужили репутацию тех, кто создаёт уют и комфорт с качественным подходом по адекватным ценам.</p>
         <div class="advantages">
-          <div class="advantage advantage--1">
+          <div class="advantage advantage--1 animated wow fadeIn" data-wow-duration="3s">
             <h3 class="advantage__title">1. Доступные цены</h3>
             <p class="advantage__description">Наши цены <span>ниже рыночных</span>, потому что мы работаем напрямую с поставщиками и используем новые методы</p>
             <a href="#RequestCall" class="js-set-hvalue btn-link" data-hvalue="Почему многие выбирают нас - кнопка Узнать цены">Узнать цены</a>
           </div>
-          <div class="advantage advantage--2">
+          <div class="advantage advantage--2 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.1s">
             <h3 class="advantage__title">2. Опытные строители</h3>
             <p class="advantage__description">Все лучшее мы подкрепляем опытом наших сотрудников, которые <span>знают стройку</span> и имеют опыт <span>от 5 до 20 лет</span></p>
           </div>
-          <div class="advantage advantage--3">
+          <div class="advantage advantage--3 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s">
             <h3 class="advantage__title">3. Лучшие материалы</h3>
             <p class="advantage__description">В строительстве мы используем только качественные материалы, благодаря которым <span>можно быть уверенным в надежности дома</span></p>
           </div>
-          <div class="advantage advantage--4">
+          <div class="advantage advantage--4 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.4s">
             <h3 class="advantage__title">4. Новые технологии</h3>
             <p class="advantage__description">Новые методы и технологии позволяют предложить Вам самое <span>высокое качество по</span> максимально <span>низкой цене</span></p>
           </div>
-          <div class="advantage advantage--5">
+          <div class="advantage advantage--5 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s">
             <h3 class="advantage__title">5. Всегда вовремя</h3>
             <p class="advantage__description">Специалисты нашей компании точно планируют все виды работ. Материалы приезжают вовремя. <span>Вы всегда заселяетесь в срок</span></p>
           </div>
-          <div class="advantage advantage--6">
+          <div class="advantage advantage--6 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.6s">
             <h3 class="advantage__title">6. Без головной боли</h3>
             <p class="advantage__description">Процесс стройки не доставит Вам головной боли. Ваши желания, риски и <span>все проблемы мы берем на себя.</span></p>
           </div>
@@ -287,55 +292,55 @@
         <div class="build__content">
           <img src="img/build_house.png" alt="pic" width="881" height="476">
 
-          <div class="build__detail build__detail--1">открыть блок ниже</div>
+          <div class="build__detail build__detail--1 animated wow rotateIn" data-wow-duration="1.5s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--1">
             <h3 class="build__detail-title">Несущий каркас</h3>
             <p class="build__detail-description">При использовании любого каркаса мы берём только строганные, прочные и сухие доски 50х150мм, обрабатывая все конструкции огнебиозащитой</p>
           </div>
 
-          <div class="build__detail build__detail--2">открыть блок ниже</div>
+          <div class="build__detail build__detail--2 animated wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--2">
             <h3 class="build__detail-title">Внешняя отделка</h3>
             <p class="build__detail-description">Учитывая Ваши желания, возможны любые виды наружной отделки, например: облицовачный кирпич, сайдинг, блок-хаус, имитация бруса, кирпич, OSB листы,евровагонка, и др.</p>
           </div>
 
-          <div class="build__detail build__detail--3">открыть блок ниже</div>
+          <div class="build__detail build__detail--3 animated wow rotateIn" data-wow-duration="1.5s" data-wow-delay="0.2s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--3">
             <h3 class="build__detail-title">Диффузионная мембрана</h3>
             <p class="build__detail-description">Позволяет выводить влагу из утеплителя с использованием вентиляционного зазора</p>
           </div>
 
-          <div class="build__detail build__detail--4">открыть блок ниже</div>
+          <div class="build__detail build__detail--4 animated wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.5s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--4">
             <h3 class="build__detail-title">Механическая стяжка пола</h3>
             <p class="build__detail-description">Идеально ровный и прочный пол позволяет качественно положить покрытия любого уровня</p>
           </div>
 
-          <div class="build__detail build__detail--5">открыть блок ниже</div>
+          <div class="build__detail build__detail--5 animated wow rotateIn" data-wow-duration="1.5s" data-wow-delay="0.2s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--5">
             <h3 class="build__detail-title">Утепление всех стен</h3>
             <p class="build__detail-description">Утепление стен в 3 слоя 150 мм позволяет комфортно жить в доме круглый год. Минераловатный утеплитель эгологичен и не горит.</p>
           </div>
 
-          <div class="build__detail build__detail--6">открыть блок ниже</div>
+          <div class="build__detail build__detail--6 animated wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--6">
             <h3 class="build__detail-title">Пароизоляция</h3>
             <p class="build__detail-description">Служит для защиты утеплителя и стен от попадания влаги</p>
           </div>
 
-          <div class="build__detail build__detail--7">открыть блок ниже</div>
+          <div class="build__detail build__detail--7 animated wow rotateIn" data-wow-duration="1.5s" data-wow-delay="0.4s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--7">
             <h3 class="build__detail-title">Окна по ГОСТу</h3>
             <p class="build__detail-description">Для максимального качества, установка окон проводится только по государственным стандартам</p>
           </div>
 
-          <div class="build__detail build__detail--8">открыть блок ниже</div>
+          <div class="build__detail build__detail--8 animated wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.4s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--8">
             <h3 class="build__detail-title">Безопасная проводка</h3>
             <p class="build__detail-description">Для Вашего спокойствия мы проводим электричество только безопасным, не горючим проводом</p>
           </div>
 
-          <div class="build__detail build__detail--9">открыть блок ниже</div>
+          <div class="build__detail build__detail--9 animated wow rotateIn" data-wow-duration="1.5s" data-wow-delay="0.3s">открыть блок ниже</div>
           <div class="build__detail-info build__detail-info--9">
             <h3 class="build__detail-title">Внутренняя отделка</h3>
             <p class="build__detail-description">Качественная отделка в домах уже с использованием вентиляционного зазора позволяет избежать влаги и конденсата</p>
@@ -389,41 +394,41 @@
       </div>
     </section>
 
-    <section class="how-works">
+    <section class="how-works" id="section-5">
       <div class="container">
         <h2 class="how-works__title">Как мы работаем с клиентами</h2>
         <p class="how-works__description">Не смотря на то, что мы используем давно отлаженную схему работы с клиентами, иногда мы готовы пойти<br>на встречу и подстроиться под Ваши обстоятельства, чтобы взаимодействие с нами было удобным для Вас!</p>
         <div class="works">
-          <div class="work work--1">
+          <div class="work work--1 animated wow fadeIn" data-wow-duration="3s">
             <h3 class="work__title">1. Звонок или заявка</h3>
             <p class="work__description">Свяжитесь с нами или оставьте заявку, и мы сами перезвоним Вам для бесплатной консультации</p>
             <a href="#RequestCall" class="js-set-hvalue btn-link" data-hvalue="Как мы работаем с клиентами - кнопка Заказать звонок">Заказать звонок</a>
           </div>
-          <div class="work work--2">
+          <div class="work work--2 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.1s">
             <h3 class="work__title">2. Полное обсуждение </h3>
             <p class="work__description">После звонка мы встречаемся с Вами для более подробного обсуждения Вашего проекта</p>
           </div>
-          <div class="work work--3">
+          <div class="work work--3 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s">
             <h3 class="work__title">3. Выезд на участок</h3>
             <p class="work__description">Затем мы едем на Ваш участок для осмотра или помогаем с его покупкой</p>
           </div>
-          <div class="work work--4">
+          <div class="work work--4 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.3s">
             <h3 class="work__title">4. Составление сметы</h3>
             <p class="work__description">Составляем сметный расчет, рабочую документацию или чертежи, если стройка типовая</p>
           </div>
-          <div class="work work--5">
+          <div class="work work--5 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.4s">
             <h3 class="work__title">5. Договариваемся</h3>
             <p class="work__description">После подписания договора, Вы не получите “сюрприз” под названием “нужно ещё денег”</p>
           </div>
-          <div class="work work--6">
+          <div class="work work--6 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.6s">
             <h3 class="work__title">6. Начало стройки</h3>
             <p class="work__description">Завозим материалы, решаем много проблем, в которых отлично разбираемся и строим на совесть!</p>
           </div>
-          <div class="work work--7">
+          <div class="work work--7 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.7s">
             <h3 class="work__title">7. Отчётность</h3>
             <p class="work__description">На каждом этапе стройки Вы получаете от нас полную отчётность и документацию</p>
           </div>
-          <div class="work work--8">
+          <div class="work work--8 animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">
             <h3 class="work__title">8. Сдача проекта</h3>
             <p class="work__description">Проверяем все на качество, за собой убираем и заселяем Вас точно в срок!</p>
           </div>
@@ -494,7 +499,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="section-6">
       <div class="container">
         <h2 class="reviews__title">Хорошая работа сама за себя говорит</h2>
         <p class="reviews__description">Мы ценим каждое слово, которое помогает нам стать лучше и делать клиентов счастливее!</p>
@@ -545,7 +550,7 @@
       </div>
     </section>
 
-    <div class="questions">
+    <div class="questions" id="section-7">
       <div class="container container--footer">
         <div class="questions__block">
           <div class="questions__title">У вас остались вопросы?</div>
@@ -600,6 +605,22 @@
       });
     </script>
 
+    <!-- Page Scroll to id plugin -->
 
+    <!-- Page Scroll to id plugin -->
+		<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.js"></script>
+
+    <script>
+			(function($){
+				$(window).load(function(){
+
+					/* Page Scroll to id fn call */
+					$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+						highlightSelector:"#navigation-menu a",
+						keepHighlightUntilNext:true
+					});
+				});
+			})(jQuery);
+		</script>
   </body>
 </html>

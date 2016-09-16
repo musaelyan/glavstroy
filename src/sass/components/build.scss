@@ -71,6 +71,7 @@
     border: 4px solid rgba(238, 106, 54, 1);
     background: #f0f0f0;
     position: absolute;
+    transition: all 0.3s ease;
     &:after {
       content: "";
       background: url("../img/plus.png") no-repeat center;
@@ -164,10 +165,24 @@
     &--8 {
       top: 260px;
       left: 360px;
+
+      &:before {
+        content: "";
+        width: 21px;
+        height: 73px;
+        position: absolute;
+        background: url("../img/arrow-house.png") no-repeat center;
+        bottom: 65px;
+        right: 0;
+      }
+
       &:hover {
         background: url("../img/build-8.png") no-repeat center;
         top: 225px;
         left: 335px;
+        &:before {
+          opacity: 0;
+        }
       }
     }
 
@@ -186,8 +201,11 @@
 
   &__detail-info {
     width: 275px;
-    display: none;
+    transition: opacity 0.3s;
     position: absolute;
+    transition: all 1s ease;
+    opacity: 0;
+
 
     &--1 {
       top: 150px;
@@ -261,5 +279,5 @@
 
 
 .build__detail:hover + .build__detail-info {
-  display: block;
+  opacity: 1;
 }
