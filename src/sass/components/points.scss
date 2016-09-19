@@ -12,10 +12,10 @@
   width: 212px;
   display: inline-block;
   vertical-align: top;
-  margin-right: 104px;
   text-align: center;
   @include description;
   color: #d9d9d9;
+  margin-right: 104px;
   &:last-child {
     margin-right: 0;
   }

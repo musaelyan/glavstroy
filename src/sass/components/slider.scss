@@ -55,53 +55,12 @@
 .slide {
   padding: 100px 0 65px;
   position: relative;
-
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 9999;
-  }
-
-  &--1 {
-
-    &:after {
-      background: url("../img/slider-img-1.png") no-repeat;
-      width: 310px;
-      height: 399px;
-      bottom: -20px;
-    }
-  }
-
-  &--2 {
-
-
-    &:after {
-      background: url("../img/slider-img-2.png") no-repeat;
-      width: 279px;
-      height: 409px;
-      bottom: -20px;
-    }
-  }
-
-  &--3 {
-
-
-    &:after {
-      background: url("../img/slider-img-3.png") no-repeat;
-      width: 332px;
-      height: 418px;
-      bottom: -54px;
-    }
-  }
 }
 
 .fotorama__nav-wrap {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 .fotorama__dot {

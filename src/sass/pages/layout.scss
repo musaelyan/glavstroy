@@ -14,6 +14,46 @@ body {
   &--slider {
     padding: 0 80px;
     width: 1040px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 9999;
+    }
+    &--1 {
+
+      &:after {
+        background: url("../img/slider-img-1.png") no-repeat;
+        width: 310px;
+        height: 399px;
+        bottom: -85px;
+      }
+    }
+
+    &--2 {
+
+
+      &:after {
+        background: url("../img/slider-img-2.png") no-repeat;
+        width: 279px;
+        height: 409px;
+        bottom: -60px;
+      }
+    }
+
+    &--3 {
+
+
+      &:after {
+        background: url("../img/slider-img-3.png") no-repeat;
+        width: 332px;
+        height: 418px;
+        bottom: -125px;
+      }
+    }
   }
 
   &--calculation {
